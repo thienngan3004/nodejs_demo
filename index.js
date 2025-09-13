@@ -6,3 +6,11 @@ function Info() {
     console.log("Ten: " + name + ", " + age + " tuoi");
 }
 Info();
+
+function calculateAge() {
+    let currentYear = new Date().getFullYear();
+    let birthYear = prompt("Nhap nam sinh: ");
+    let age = currentYear - birthYear;
+    console.log("Tuoi cua ban la: " + age);
+}
+calculateAge();
